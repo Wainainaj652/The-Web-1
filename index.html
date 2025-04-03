@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Wainaina - Portfolio</title>
+    <link rel="stylesheet"    href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <header>
+        <img id="prof" src="assets/jamo.JPG" alt="James Wainaina">
+        <div class="header-text">
+            <h1>JAMES WAINAINA</h1>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#languages">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <ul class="contact-info">
+                <li><i class="fas fa-envelope"></i> wainainaj726@gmail.com</li>
+                <li><i class="fas fa-phone"></i> +254 759 325 372</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="fade-in">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>
+                I am a passionate and driven computer science student with expertise in Java, Python, JavaScript, and C. 
+                My love for technology extends to aviation, space exploration, and engineering. I thrive on building 
+                innovative projects and solving real-world problems through software development, databases, and data science.
+            </p>
+        </section>
+
+        <!-- Programming Languages -->
+        <section id="languages" class="fade-in">
+            <h2><i class="fas fa-code"></i> Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fas fa-c"></i> C</li>
+                        <li><i class="fab fa-html"></i> Html</li>
+                        <li><i class="fab fa-css"></i> Css</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li><i class="fas fa-database"></i> MySQL Database</li>
+                        <li><i class="fas fa-layer-group"></i> Full-Stack Development</li>
+                        <li><i class="fas fa-brain"></i> Machine Learning</li>
+                        <li><i class="fas fa-tasks"></i> Project Management</li>
+                        <li><i class="fas fa-tasks"></i> Prompt Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Skills -->
+        <section id="soft-skills" class="fade-in">
+            <h2><i class="fas fa-brain"></i> Soft Skills</h2>
+            <ul class="soft-skills-list">
+                <li>Leadership</li>
+                <li>Time Management</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Self-Learning</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="fade-in">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <p><strong>Benefitiary of Power learn Project  2025 Feb Cohort </strong> -[PLP],[Feb/2025 - Present]</p>
+            <p><strong>Degree in Computer Science</strong> - [Kisii University], [Sep/2023-Present]</p>
+            <a href="My CV.docx" class="download-btn"><i class="fas fa-download"></i> Download CV</a>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="fade-in">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="project-card">
+                <h3>Full-Stack Websites (2025 - Present)</h3>
+                <ul>
+                    <li>Built websites for clients to gain real-world development experience</li>
+                    <li>Technologies used: HTML/CSS, JavaScript</li>
+                </ul>
+                <a href="https://github.com/Wainainaj652/Poetry.git" class="project-link" target="_blank">View Project</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://wainainaj652.github.io/Poetry/"  class="project-link" target="_blank">The website</a>
+            </div>
+            <div class="project-card">
+                <h3>Python Escape Room Game (2025)</h3>
+                <ul>
+                    <li>Developed an interactive game applying OOP principles</li>
+                    <li>Enhanced problem-solving and logic skills</li>
+                </ul>
+                <a href="https://github.com/Wainainaj652/Escape-room-game.git" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>MySQL Database Project (2025)</h3>
+                <ul>
+                    <li>Designed and managed relational databases</li>
+                    <li>Integrated with Node.js for backend functionality</li>
+                </ul>
+                
+                <a href="https://github.com/Wainainaj652/web_project.git" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="protocol">
+                <h3>A Jikubali Event Protocol team Member(8 March 2025)</h3>
+                <ul>
+                    <li>Assisted in event Mangement and coordination</li>
+                    <li>Developed Teamwork and organizational skills</li>
+                    <li>Gained Experience in Protocol handling</li>
+                </ul>
+            </div>
+            <img id="jiku" src="/assets/jiku.jpg" alt="Protocol team at Jikubali event">
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="fade-in">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <form id="contact-form" action="https://formspree.io/f/mzzeangp" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error" id="name-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="error" id="message-error"></div>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 James Wainaina</p>
+        <div class="social-links">
+            <a href="https://github.com/Wainainaj652" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/james-wainaina-34a249334?"  target="_blank"  aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
